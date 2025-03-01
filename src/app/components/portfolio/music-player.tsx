@@ -412,7 +412,7 @@ export default function MusicPlayer({ isVisible, toggleVisibility }: MusicPlayer
     };
 
     return (
-        <div className="fixed bottom-10 right-10 z-50 flex items-center">
+        <div className="fixed bottom-[5.5rem] sm:bottom-10  sm:right-10 right-[0.5rem] z-50 flex items-center">
             <motion.div
                 initial={{ x: 0 }}
                 animate={{ x: isVisible ? 0 : 420 }}
@@ -431,7 +431,7 @@ export default function MusicPlayer({ isVisible, toggleVisibility }: MusicPlayer
                 initial={{ x: 0 }}
                 animate={{ x: isVisible ? 0 : 440 }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                className="border rounded-[10px] w-[400px] overflow-hidden bg-white px-6 py-2 border-[#E8E8E8]"
+                className="border rounded-[10px] w-[368] sm:w-[400px] overflow-hidden bg-white px-6 py-2 border-[#E8E8E8]"
             >
                 <NowPlaying currentTrack={currentTrack} isPlaying={isPlaying} />
                 <audio
