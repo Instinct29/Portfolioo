@@ -19,30 +19,37 @@ const experiences: WorkExperience[] = [
     {
         company: "Hashtrust Technologies",
         role: "Senior Software Engineer",
-        dateRange: "July 2022 – Present | Gurugram, Haryana",
+        dateRange: "Sept 2022 – Present | Gurugram, Haryana",
         companyUrl: "https://hashtrust.com",
         description:
-            "Led the development of modern, responsive websites and documentation platforms, improving user engagement through actionable data insights. Enhanced website performance by 30% through API optimizations and server-side migrations. Developed an integrations platform by leveraging dynamic data retrieval, ensuring efficient frontend responsiveness and backend handling. Applied SEO techniques, boosting optimization by approximately 78%. Built a payment gateway with Web3 capabilities, enabling secure token transactions and seamless user interactions. Collaborated with UI/UX teams to deliver pixel-perfect designs and reusable components.",
-        technologies: ["React", "NextJS", "TypeScript", "TailwindCSS", "Web3", "API Integration"]
+        "Developed and implemented responsive, accessible web applications by collaborating with designers and backend teams, ensuring seamless user experiences. Built custom data visualizations using various charting libraries, enhancing data insights and engagement. Led the development of modern, high-performance web platforms, optimizing API interactions and server-side processes to improve website performance by 30%. Designed and integrated a Web3-enabled payment gateway, enabling secure token transactions and streamlined user interactions. Applied SEO strategies, increasing search optimization by 78%, and improved frontend responsiveness through dynamic data retrieval. Conducted technical sessions on Git, Jira, and development best practices, enhancing team collaboration and productivity. Worked closely with clients and stakeholders, gathering requirements, proposing technical solutions, and ensuring on-time project delivery.",
+        technologies: [
+            "Next.js", "React.js", "JavaScript", "GitHub", "Git", "Chart.js", "Redux.js",
+            "Storybook", "JSON Web Token (JWT)", "REST APIs", "Google API", "Apollo GraphQL",
+            "Tailwind CSS", "Hasura", "Node.js", "Jira", "Docker"
+        ]
     },
     {
-        company: "Celebal Technologies",
+        company: "Hashtrust Technologies",
         role: "Associate Software Developer",
-        dateRange: "Aug 2021 – Mar 2022 | Jaipur, Rajasthan",
-        companyUrl: "https://celebaltech.com",
+        dateRange: "Apr 2022 – Sep 2022 | Gurugram, Haryana | Remote",
+        companyUrl: "https://hashtrust.com",
         description:
-            "Designed and developed chatbot applications with tailored conversational flows for cognitive search solutions. Created custom interfaces and integrated backend systems to meet client specifications, enhancing user experience. Worked closely with teams to deliver feature-rich updates and streamline application performance.",
-        technologies: ["ChatBot Development", "UI/UX Design", "Cognitive Search", "Backend Integration"]
+            "Designed and developed chatbot applications with tailored conversational flows for cognitive search solutions. Created custom interfaces and integrated backend systems to meet client specifications, enhancing user experience. Worked closely with teams to deliver feature-rich updates and streamline application performance. Utilized Redux and Context API for state management, debugged and troubleshot issues for seamless functionality, and followed frontend best practices, including performance optimization and SEO strategies. Managed code effectively using Git and version control tools.",
+        technologies: ["Javascript","ChatBot Development", "UI/UX/Figma", "Backend Integration"]
+        
     },
     {
-        company: "Hofars",
-        role: "Software developer Intern",
-        dateRange: "Jun 2019 – Oct 2019 | Remote",
-        companyUrl: "https://hofars.com",
+        company: "Claymango",
+        role: "Software Developer Intern",
+        dateRange: "March 2021 – Aug 2021 | Remote",
+        companyUrl: "https://www.claymango.com/",
         description:
-            "Enhanced the main website with new features, ensuring secure access through robust authentication and authorization systems. Developed an HRMS portal dashboard with intuitive, user-friendly interfaces for efficient HR task management, collaborating with teams to deliver impactful solutions.",
-        technologies: ["Web Development", "Authentication", "HRMS", "Dashboard UI"]
-    },
+            "Developed and maintained web applications using React.js and related technologies, implementing responsive designs and ensuring cross-browser compatibility. Enhanced the main website with new features, strengthening authentication and authorization systems for secure user access. Worked on projects with significant business and user impact, collaborating with cross-functional teams, including designers and product managers, to deliver high-quality solutions.",
+        technologies: [
+             "Responsive Design", "Dashboard UI", "Performance Optimization", "SEO", "Git", "Version Control"
+        ]
+    }
 ]
 
 const fadeInUpVariants = {

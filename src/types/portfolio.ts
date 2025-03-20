@@ -11,6 +11,7 @@ export interface ExperienceItemProps {
     title: string;
     description: string;
     image: StaticImageData;
+    onClick?: () => void;
   }
   
   export interface EducationItemProps {

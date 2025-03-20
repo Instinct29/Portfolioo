@@ -10,8 +10,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Jasveer Singh Portfolio",
-  description: "Explore Jasveer Singh's portfolio – a showcase of expertise in blockchain development, Next.js, and full-stack solutions. Discover innovative projects, technical insights, and professional achievements. Built with performance and SEO in mind.",
+  title: "Manthan Gour Portfolio",
+  description: "Explore Manthan Gour's portfolio – a showcase of expertise in blockchain development, Next.js, and full-stack solutions. Discover innovative projects, technical insights, and professional achievements. Built with performance and SEO in mind.",
 };
 
 export default function RootLayout({

@@ -33,7 +33,7 @@ export function ProfileHeader({
             setIsDownloading(false);
             const link = document.createElement("a");
             link.href = "/resume.pdf";
-            link.download = "Jasveer_Singh_Resume.pdf";
+            link.download = "Manthan_Gour_Resume.pdf";
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -51,8 +51,8 @@ export function ProfileHeader({
                     <Image
                         src={Profile}
                         alt="Profile"
-                        width={45}
-                        height={45}
+                        width={60}
+                        height={60}
                         className="rounded-full transition-all duration-300"
                     />
                     <AnimatePresence>
@@ -71,7 +71,7 @@ export function ProfileHeader({
                 </div>
 
                 <div className="flex flex-col items-start overflow-hidden w-[170px] h-12">
-                    <div className="text-base font-medium text-gunmetal">Jasveer Singh</div>
+                    <div className="text-base font-medium text-gunmetal">Manthan Gour</div>
                     <div className="relative h-6 w-full flex items-center overflow-hidden">
                         <AnimatePresence mode="wait">
                             <motion.div

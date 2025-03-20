@@ -1,22 +1,35 @@
 import { SectionHeader } from "../ui/section-header"
 import Image from "next/image"
-import signature from "../../../images/icons/signature.svg"
+import signature from "../../../images/icons/signature.png"
 
 export function SummarySection() {
     return (
         <section className="mb-[1rem]">
-            <SectionHeader title="Summary" />
-            <div className="space-y-4 text-[#667085]">
-                <p>
-                    As a passionate Senior Software Engineer, I thrive on transforming concepts into high-performance digital solutions that prioritize seamless functionality and exceptional user experiences. With a strong foundation in frontend development, complemented by solid backend expertise and a touch of Web3 exploration, I excel at crafting responsive, intuitive applications that address real-world challenges.
-                </p>
-                <p>
-                    I’m always eager to collaborate and bring innovative perspectives to every project, continuously honing my craft through practical experience, emerging tech exploration—particularly in AI and large language models—and active engagement with cross-functional teams. If you’re seeking a dedicated professional who combines technical expertise with a commitment to delivering impactful, user focused solutions, I’d love to connect and explore how I can contribute to your team’s success.
-                </p>
-            </div>
-            <div className=" flex justify-end text-end">
-                <Image src={signature} alt="sign" />
-            </div>
-        </section>
+        <SectionHeader title="Summary" />
+        <div className="space-y-4 text-[#667085]">
+        <p>
+            As a <strong>Senior Software Engineer with a product mindset</strong>, I thrive on transforming concepts into 
+            <strong> high-impact digital solutions</strong> that prioritize <strong>user experience, scalability, and business value</strong>. 
+            With a strong foundation in <strong>frontend development</strong>, complemented by <strong>manageable backend integration</strong> 
+            and the ability to <strong>research and develop Web3 solutions</strong>, I excel at crafting 
+            <strong>intuitive, data-driven applications</strong> that solve real-world problems.
+        </p>
+
+            <p>
+                Beyond development, I bring <strong>strategic thinking and cross-functional collaboration</strong>, working closely with <strong>designers, 
+                stakeholders, and product teams</strong> to align technology with user needs and business goals. Passionate about 
+                <strong>AI, large language models, and emerging tech</strong>, I leverage insights from market trends and data to drive 
+                <strong>informed decision-making</strong> and optimize <strong>product performance</strong>.
+            </p>
+            <p>
+                I’m eager to collaborate and contribute to <strong>technology-driven product innovation</strong>. If you're looking for someone who bridges the gap 
+                between <strong>engineering and product strategy</strong>, let’s connect and explore how I can add value to your team.
+            </p>
+        </div>
+        <div className="flex justify-end text-end">
+            <Image src={signature} alt="sign" />
+        </div>
+    </section>
+    
     )
 }

@@ -14,6 +14,11 @@ import PinterestGrid from "./components/portfolio/gallary";
 import WorkTogether from "./components/portfolio/work-together";
 import MusicPlayer from "./components/portfolio/music-player";
 import { MusicIcon } from "./components/icons/shared";
+import EducationCard1 from "./components/portfolio/aa";
+import CursorEffect from "./components/ui/cursor-effect";
+import StarryBackground from "./components/ui/starry-effect";
+
+
 
 export default function Page() {
   const [isMusicPlayerVisible, setIsMusicPlayerVisible] = useState<boolean>(false);
@@ -90,7 +95,7 @@ export default function Page() {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.ctrlKey && event.key === "s") {
         event.preventDefault();
-        window.location.href = "mailto:jasveer3101998@gmail.com?subject=Let's Work Together&body=Hi, I'd love to discuss a project with you!";
+        window.location.href = "mailto:manthangour@gmail.com?subject=Let's Work Together&body=Hi, I'd love to discuss a project with you!";
       }
     };
 
@@ -100,17 +105,20 @@ export default function Page() {
 
   return (
     <>
+      <StarryBackground />
+      <CursorEffect />
       <div className="max-w-3xl mx-auto px-4 py-12">
-        <ProfileHeader professions={["Senior Software Engineer", "Blockchain and Ai enthusiast", "Cooking baking"]} />
-        <div className="intro-section"><IntroSection /></div>
-        <PinterestGrid />
+      <ProfileHeader professions={["Senior Software Engineer", "Product & Tech Enthusiast", "Sports & Fitness Aficionado"]} />
+      <div className="intro-section"><IntroSection /></div>
+      <div className="projects-section"><ProjectsSection /></div>
         <div className="timeline-section"><Timeline /></div>
         <div className="tech-stack-section"><TechStackSection /></div>
-        <div className="projects-section"><ProjectsSection /></div>
         <div className="education-section"><EducationSection /></div>
+        <PinterestGrid />
         <div className="summary-section"><SummarySection /></div>
         <WorkTogether />
-        <PageFooter creator="Jasveer Singh" />
+        {/* <EducationCard1 /> */}
+        <PageFooter creator="Manthan Gour" />
         <Dock items={items} autoHideDelay={5000} />
       </div>
       <MusicPlayer isVisible={isMusicPlayerVisible} toggleVisibility={toggleMusicPlayer} />

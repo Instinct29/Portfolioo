@@ -1,24 +1,39 @@
+
+
 import React from "react";
+
 interface PageFooterProps {
     creator: string;
 }
+
 const SocialIcon = ({ href, children }: { href: string; children: React.ReactNode }) => (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="p-[10px] border border-[#EAECF0] bg-offWhite rounded-lg block">
+    <a
+        href={href}
+        target="_bddlank"
+        rel="noopener noreferrer"
+        className="p-[10px] border border-[#EAECF0] bg-offWhite rounded-lg block hover:bg-gray-200 transition"
+    >
         {children}
     </a>
 );
+
 export function PageFooter({ creator }: PageFooterProps) {
     return (
-        <div className="flex justify-between items-center pt-8 border-t">
+        <div className="flex justify-between items-center pt-8 border-t mb-8">
             <div className="flex gap-4">
-                <SocialIcon href="mailto:jasveer3101998@gmail.com">
+                <SocialIcon href="mailto:manthangour20@gmail.com">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.125 5.13895L8.756 10.107C9.181 10.482 9.819 10.482 10.244 10.107L15.875 5.13895M16.625 14.45L11.375 9.94995M7.625 9.94995L2.375 14.45M4.25 15.95H14.75C15.993 15.95 17 14.943 17 13.7V6.19995C17 4.95695 15.993 3.94995 14.75 3.94995H4.25C3.007 3.94995 2 4.95695 2 6.19995V13.7C2 14.943 3.007 15.95 4.25 15.95Z" stroke="#98A1B2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </SocialIcon>
-                <SocialIcon href="https://www.linkedin.com/in/jasveer-singh-09857016a/">
+                <SocialIcon href="https://www.linkedin.com/in/manthan-gour/">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.75 9.26995V13.7M8.658 13.7V10.451C8.658 10.399 8.658 10.373 8.659 10.351C8.682 9.76395 9.152 9.29395 9.738 9.27095C9.761 9.26995 9.787 9.26995 9.839 9.26995C9.944 9.26995 9.996 9.26995 10.04 9.27195C11.213 9.31795 12.154 10.258 12.2 11.432C12.202 11.476 12.202 11.528 12.202 11.633V13.7M5.75 7.11295H5.757M7.55 16.7H11.45C13.13 16.7 13.97 16.7 14.612 16.373C15.176 16.085 15.635 15.626 15.923 15.062C16.25 14.42 16.25 13.58 16.25 11.9V7.99995C16.25 6.31995 16.25 5.47995 15.923 4.83795C15.635 4.27395 15.176 3.81495 14.612 3.52695C13.97 3.19995 13.13 3.19995 11.45 3.19995H7.55C5.87 3.19995 5.03 3.19995 4.388 3.52695C3.824 3.81495 3.365 4.27395 3.077 4.83795C2.75 5.47995 2.75 6.31995 2.75 7.99995V11.9C2.75 13.58 2.75 14.42 3.077 15.062C3.365 15.626 3.824 16.085 4.388 16.373C5.03 16.7 5.87 16.7 7.55 16.7Z" stroke="#98A1B2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                </SocialIcon>
+                <SocialIcon href="https://github.com/Instinct29">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 2C5.358 2 2 5.358 2 9.5C2 12.904 4.29 15.735 7.433 16.615C7.83 16.684 7.98 16.444 7.98 16.234V14.793C5.865 15.211 5.385 13.935 5.385 13.935C5.065 13.152 4.565 12.935 4.565 12.935C3.865 12.525 4.6 12.534 4.6 12.534C5.36 12.595 5.78 13.325 5.78 13.325C6.46 14.445 7.63 14.115 8.065 13.915C8.14 13.45 8.33 13.155 8.55 12.945C6.565 12.735 4.475 12.045 4.475 8.905C4.475 7.905 4.825 7.105 5.425 6.505C5.335 6.295 5.025 5.365 5.525 4.095C5.525 4.095 6.305 3.845 7.98 5.145C8.705 4.965 9.495 4.875 10.285 4.875C11.075 4.875 11.865 4.965 12.59 5.145C14.265 3.845 15.045 4.095 15.045 4.095C15.545 5.365 15.235 6.295 15.145 6.505C15.745 7.105 16.095 7.905 16.095 8.905C16.095 12.055 14 12.73 12.01 12.94C12.285 13.19 12.52 13.67 12.52 14.415V16.235C12.52 16.445 12.67 16.69 13.07 16.615C16.21 15.735 18.5 12.905 18.5 9.5C18.5 5.358 15.142 2 11 2H9.5Z" stroke="#98A1B2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </SocialIcon>
                 <SocialIcon href="https://twitter.com/">
