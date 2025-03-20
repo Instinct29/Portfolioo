@@ -9,12 +9,26 @@ import fetch from "../../../images/fetch-docs.png";
 import Metal from "../../../images/metal.png";
 import integrations from "../../../images/integrations.png";
 import globacap from "../../../images/globacap.png";
+import { StaticImageData } from "next/image";
+
+
+type Project = {
+  id: string;
+  title: string;
+  shortDescription: string;
+  fullDescription: string;
+  image: StaticImageData;
+  technologies: string[];
+  features: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+};
 
 export function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const projects = [
+  const projects: Project[] = [
     { 
       id: "fetch-docs",
       title: "Fetch Documentation",
@@ -58,7 +72,7 @@ export function ProjectsSection() {
     },
   ];
 
-  const openModal = (project: any) => {
+  const openModal = (project: Project) => {
     setSelectedProject(project);
     setIsModalOpen(true);
   };

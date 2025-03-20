@@ -14,7 +14,6 @@ import PinterestGrid from "./components/portfolio/gallary";
 import WorkTogether from "./components/portfolio/work-together";
 import MusicPlayer from "./components/portfolio/music-player";
 import { MusicIcon } from "./components/icons/shared";
-import EducationCard1 from "./components/portfolio/aa";
 import CursorEffect from "./components/ui/cursor-effect";
 import StarryBackground from "./components/ui/starry-effect";
 
@@ -38,7 +37,7 @@ export default function Page() {
 
   useEffect(() => {
     document.body.style.cursor = cursorStyles[cursorIndex];
-  }, [cursorIndex]);
+  }, [cursorIndex, cursorStyles]);
 
   const handleArrowClick = () => {
     cycleCursor();

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { X, ExternalLink, Github, CheckCircle } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 export type Project = {
@@ -10,7 +10,7 @@ export type Project = {
   title: string;
   shortDescription: string;
   fullDescription: string;
-  image: string;
+  image: StaticImageData;
   technologies: string[];
   features: string[];
   liveUrl?: string;
@@ -57,7 +57,7 @@ export function ProjectDetailModal({ project, isOpen, onClose }: ProjectDetailMo
       document.removeEventListener("mousedown", handleOutsideClick);
     }
     return () => document.removeEventListener("mousedown", handleOutsideClick);
-  }, [isOpen]);
+  }, [isOpen, handleOutsideClick]);
 
   if (!project || !isOpen) return null;
 

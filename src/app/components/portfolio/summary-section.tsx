@@ -22,8 +22,8 @@ export function SummarySection() {
                 <strong>informed decision-making</strong> and optimize <strong>product performance</strong>.
             </p>
             <p>
-                I’m eager to collaborate and contribute to <strong>technology-driven product innovation</strong>. If you're looking for someone who bridges the gap 
-                between <strong>engineering and product strategy</strong>, let’s connect and explore how I can add value to your team.
+                I&apos;m eager to collaborate and contribute to <strong>technology-driven product innovation</strong>. If you&apos;re looking for someone who bridges the gap 
+                between <strong>engineering and product strategy</strong>, let&apos;s connect and explore how I can add value to your team.
             </p>
         </div>
         <div className="flex justify-end text-end">
